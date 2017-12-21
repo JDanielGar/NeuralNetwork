@@ -1,0 +1,14 @@
+
+BackPropagation Function:
+
+We have now two cross entropy functions ( Read Cross Entropy ), the binary and multiclass classification. The idea is to find W, and deriving J (The error function) respect to the W we can get the W who can predict in better way our function.
+
+- Objective function:
+	In case that we have a function with multiple local minimums or maximuns we need to use partial derivates.
+		P ( T | I , W ) = NProd(KProd(Y^t))
+		L = NSum(KSUm( T log ( Y ) )
+
+ 
+
+
+

@@ -1,0 +1,42 @@
+Train Theory
+
+() Minimize cost: Caculus.
+
+Minimum or Maximum also called Gradient Descent
+
+How to define the cost function ?
+
+- Binary: Coin Toss
+
+We flip a coin and we get 2 heads and 3 tails. Then, the likelihood is:
+
+	      	   Likelihood = p(H)p(H)p(T)p(T)p(T)
+			
+Another way: p = p(H), then
+		
+		   Likelihood = p ( 1 - p )
+
+Yup! We can find the cross-entropy cost function taking the derivate of our likelihood.
+
+	       Cost = - [ X log ( p )  + Y log ( 1 - p )
+
+	| Cross Entropy for binary classification 
+	|					
+	| Y = Output of model
+	| T = Targets
+	|
+	| Cost = J = -Sum( T ) log ( Y ) + ( 1 - T ) log ( 1 - Y )
+
+
+We need to do multiclass classification for doing multiple predictions of multiple sucess
+
+
+	| Cross entropy for multiclass classification
+	|
+	| Y = Probability of output to being k
+	| T = 1 if we roll k, and 0 otherwise
+	|
+	| Cost = j = -NSum(KSum( T * log ( Y ) ) )
+
+
+
